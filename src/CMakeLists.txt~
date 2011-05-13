@@ -2,18 +2,18 @@ SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 include_directories(.)
 
-
-
+<<<<<<< HEAD
+=======
 # ##############################################################################
 # Find required libraries
 # ##############################################################################
 
-
+>>>>>>> 188a565d85ecebe2fe88d6c55c839a875673e29c
 # Find Boost, at least ver. 1.41
 FIND_PACKAGE(Boost 1.41.0 REQUIRED)
 include_directories(SYSTEM ${Boost_INCLUDE_DIR})
 
-
+<<<<<<< HEAD
 FIND_PACKAGE( OpenCV REQUIRED )
 
 # CvBasic components
@@ -22,7 +22,7 @@ ADD_SUBDIRECTORY(Components)
 ADD_SUBDIRECTORY(Types)
 
 CONFIGURE_FILE(CvBasicConfig.cmake.in ${CMAKE_INSTALL_PREFIX}/CvBasicConfig.cmake @ONLY)
-
+=======
 # Find another necessary libraries
 
 # OpenCV library
@@ -44,4 +44,4 @@ ADD_SUBDIRECTORY(Types)
 
 # Prepare config file to use from another DCLs
 CONFIGURE_FILE(CvBlobsConfig.cmake.in ${CMAKE_INSTALL_PREFIX}/CvBlobsConfig.cmake @ONLY)
-
+>>>>>>> 188a565d85ecebe2fe88d6c55c839a875673e29c

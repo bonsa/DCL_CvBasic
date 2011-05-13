@@ -2,7 +2,8 @@
 <Task>
 	<!-- List of components -->
 	<Components>
-		<Source type="CameraUniCap" thread="Thread1" group="s1">
+		<Source type="CameraOpenCV" thread="Thread1" group="s1">
+			<device>1</device> 
 		</Source>
 
 		<Sink type="CvVideoWriter" thread="Thread1" group="s1">
